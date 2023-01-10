@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Casa de cambio</title>
+</head>
+<body>
+    <h3>CASA DE CAMBIO</h3>
+    <form class="formulario">
+        <p>Selecciona moneda a enviar</p>
+        <label for="uno">Dolar</label>
+        <input type="radio" name="cambio" id="uno">
+        <label for="dos">Euros</label>
+        <input type="radio" name="cambio" id="dos">
+        <p>Ingrese monto:</p>
+        <label for="cantidad">$</label>
+        <input type="number" name="cantidad" id="valor" min="1" max="100000">
+        <input type="button" id="cotizador" value="cotizar" onclick="convertir()">
+        <script src="cotizador.js"></script>
+    </form>
+</body>
+</html>
